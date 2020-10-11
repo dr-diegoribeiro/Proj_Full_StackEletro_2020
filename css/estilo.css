@@ -1,0 +1,196 @@
+p {
+    color: SLATEGRAY;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px
+}
+
+h2 {
+    color: black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#bemvindo {
+    color: SLATEGRAY;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: red;
+}
+
+#menu a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Arial;
+
+}
+
+#menu a:hover {
+    color: white;
+    background-color: black;
+    
+}
+
+#listaprodutos li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: slategray;
+}
+
+#tableprodutos td {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: slategray;
+}
+
+#formadepagamento {
+    color: white;
+    font-size: 20px;
+    background: red;
+    text-align: center;
+}
+
+#copy {
+    text-align: center;
+}
+
+h4 {
+    position: fixed;
+    margin: 0%;
+    font-size: 15px;
+}
+
+.contatos {
+    font-family: Arial;
+    font: size 4;
+    font-weight: bolder;
+    display: inline;
+}
+
+.formedition {
+    border: 5px solid red;
+    width: 430px;
+    text-align: left;
+
+}
+
+#contact-msg {
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    color: black;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+label {
+    color: black;
+    margin: 10px;
+}
+
+input {
+    margin: 10px;
+}
+
+textarea {
+    margin: 10px;
+}
+
+.quadroexterno {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(235, 157, 157);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5px;
+}
+
+.quadroexterno:hover {
+    width: 380px;
+    height: 380px;
+    
+}
+
+.itens{
+    display: flex;
+    overflow: auto;
+    width: 50%;
+    
+}
+.itens .item{
+    min-width: 150px;
+    height:100px;
+    background:rgb(231, 137, 137);
+    margin: 10px;
+    text-align: center;
+    text-justify: auto;
+}
+
+.produto {
+    width: 200px;
+    border: 1px solid red;
+    text-align: center;
+    margin: 10px;
+    border-radius: 35px;
+}
+
+.produto img {
+    width: 120px;
+}
+
+.produto img:hover {
+    width: 140px;
+}
+
+.produto .valorProduto {
+    text-decoration: line-through;
+}
+
+.produto .promocao {
+    color: red;
+}
+
+#Produtos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#principal {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#menu-lateral {
+    background-color: rgb(0, 0, 0);
+    width: 160px;
+    padding: 10px;
+    border-radius: 35px
+}
+
+#menu-lateral li {
+    width: 180px;
+    list-style: none;
+    font-family: arial;
+    color: white;
+    margin: 0%;
+    margin-left: 0%;
+
+}
+
+
+
