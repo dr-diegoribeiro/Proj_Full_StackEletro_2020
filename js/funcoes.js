@@ -42,3 +42,20 @@ function cumpomdedesconto() {
     else{
         alert("Indeferido! Desconto permitido apenas para desenvolvedores(as)!")}
     }
+
+    //* onMouseOver de imagens produtos */
+
+function setNewImage()
+{
+    document.getElementById("imggeladeira").src="imagens/indisponivel.jpg"
+}
+
+function setOldImage()
+{
+document.getElementById("imggeladeira").src="imagens/geladeira.jpg"
+
+}
+
+
+    
+
