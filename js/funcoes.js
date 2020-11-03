@@ -56,12 +56,15 @@ document.getElementById("imggeladeira").src="imagens/geladeira.jpg"
 
 }
 
+<<<<<<< HEAD
 function analisePedido() {
 
     let a1 
 
     a1 = +alert ("Solicitação de pedido enviada com sucesso, aguarde nosso contato!");
 }
+=======
+>>>>>>> 5c77ef68560d55accbe920db493053262cc20236
 
     
 
