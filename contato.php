@@ -1,3 +1,35 @@
+<?php
+
+$servername="localhost";
+$username="root";
+$password="";
+$database="fullstackeletro_bd";
+
+//criando a conaxão
+
+$conn=mysqli_connect($servername, $username, $password, $database);
+
+//correção do erro de acentuação trabahando com bd
+$conn->query("set names utf8");
+
+//Verificando a conexão
+if(!$conn){
+    die("A conexão ao BD falhou". mysqli_connect_error());
+}
+
+if(isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['motivo']) && isset($_POST['mensagem'])){
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $motivo = $_POST['motivo'];
+    $mensagem = $_POST['mensagem'];
+
+    $sql = "insert into mensagens (nome, email, motivo, mensagem) values ('$nome', '$email', '$motivo', '$mensagem')";
+    $result = $conn->query($sql);
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,13 +42,9 @@
 <body>
     <!-- Início do Menu -->
     <header>
-        <div id="logo"><a href="index..html"><img width="130px" src="imagens/Logo.Eletro_fulll.png"
-                    alt="Full Stack Eletro"></a></div>
-        <div id="menu">
-            <a href="produtos.html">Produtos</a>
-            <a href="loja.html">Lojas</a>
-            <a href="contato.html">Contato</a>
-        </div>
+        <?php 
+        include('menu.html');      
+        ?>
     </header>
     <!-- Fim do Menu -->
 
@@ -42,7 +70,7 @@
 
 
 
-        <form div class="formedition" action="http://www.foo.com" method="GET">
+        <form div class="formedition" action="" method="POST">
             <div class="quadroexterno"><img style="width: 100%;" src="imagens/Logo Maior.png">
 
             </div>
@@ -50,7 +78,10 @@
 
             <b><label for="nome">Nome:</label></b>
             <input style="color:white; background-color: red; width: 400px;" type="text" id="nome" name="nome">
-            <br><br>
+            <br>
+            <b><label for="email">E-mail:</label></b>
+            <input style="color:white; background-color: red; width: 400px;" type="text" id="nome" name="email">
+            <br>
             <p id=contact-msg>Mensagem:</p>
 
             <input type="radio" id="duvidas" name="motivo" value="duvidas">
@@ -71,8 +102,29 @@
 
         </form>
 
+        
+
     </center>
     <hr>
+
+    <?php 
+
+        $sql= "select * from mensagens";
+        $result= $conn->query($sql);
+
+    if($result->num_rows > 0){
+    while($rows = $result->fetch_assoc()){
+        echo "Data:", $rows['data'],"<br>";
+        echo "Nome:", $rows['nome'],"<br>";
+        echo "Mensagem:", $rows['mensagem'],"<br><br>";
+    }
+}else{
+    echo "Nenhum comentário cadastrado ainda!";
+}
+
+?>
+
+<hr>
 
     <footer>
         <p id="copy">&copy; Recode Pro</p>

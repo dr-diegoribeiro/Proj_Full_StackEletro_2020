@@ -139,6 +139,14 @@ textarea {
     text-justify: auto;
 }
 
+.produto img {
+    width: 120px;
+}
+
+.produto img:hover {
+    width: 140px;
+}
+
 .produto {
     width: 200px;
     border: 1px solid red;
@@ -147,13 +155,6 @@ textarea {
     border-radius: 35px;
 }
 
-.produto img {
-    width: 120px;
-}
-
-.produto img:hover {
-    width: 140px;
-}
 
 .produto .valorProduto {
     text-decoration: line-through;

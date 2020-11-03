@@ -1,14 +1,14 @@
-function exibir_categoria(categoria){
-    //alert(categoria);
 
+function exibir_categoria(categoria) {
+    //alert(categoria);x    
+    categoria = "box_" + categoria;
     let elementos = document.getElementsByClassName('produto');
-    console.log(elementos);
-    for(let i=0; i<elementos.length; i++){
-        console.log(elementos[i].id);
-        if(categoria == elementos[i].id)
-        elementos[i].style = "display:block";
+    for (let i = 0; i < elementos.length; i++) {
+        console.log(categoria);
+        if (categoria == elementos[i].id)
+            elementos[i].style = "display:block";
         else
-        elementos[i].style = "display:none";
+            elementos[i].style = "display:none";
     }
 }
 
@@ -42,3 +42,26 @@ function cumpomdedesconto() {
     else{
         alert("Indeferido! Desconto permitido apenas para desenvolvedores(as)!")}
     }
+
+    //* onMouseOver de imagens produtos */
+
+function setNewImage()
+{
+    document.getElementById("imggeladeira").src="imagens/indisponivel.jpg"
+}
+
+function setOldImage()
+{
+document.getElementById("imggeladeira").src="imagens/geladeira.jpg"
+
+}
+
+function analisePedido() {
+
+    let a1 
+
+    a1 = +alert ("Solicitação de pedido enviada com sucesso, aguarde nosso contato!");
+}
+
+    
+

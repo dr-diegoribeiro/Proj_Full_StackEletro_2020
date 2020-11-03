@@ -12,13 +12,9 @@
 <body>
     <!-- Início do Menu -->
     <header>
-        <div id="logo"><a href="index..html"><img width="130px" src="imagens/Logo.Eletro_fulll.png"
-                    alt="Full Stack Eletro"></a></div>
-        <div id="menu">
-            <a href="produtos.html">Produtos</a>
-            <a href="loja.html">Lojas</a>
-            <a href="contato.html">Contato</a>
-        </div>
+        <?php 
+        include('menu.html');      
+        ?>
     </header>
     <!-- Fim do Menu -->
 
@@ -49,7 +45,6 @@
     </center>
 
     <hr>
-    <p id="formadepagamento">Formas de Pagamento</p>
     <br>
     <center>
         <img src="./imagens/forma de pagamento daten - logos-cartoes_.jpg" alt="Formas de Pagamento">
