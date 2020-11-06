@@ -39,7 +39,10 @@ if(isset($_POST['nomeCliente']) && isset($_POST['endereco']) && isset($_POST['te
     <meta charset="UTF-8">
     <title>Envio de Pedidos</title>
     <link rel="stylesheet" href="./css/estilo.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+=======
+>>>>>>> a087fac5da9e52091bd925924a1db9373a84df9f
     <script src="js/funcoes.js"></script>
 </head>
 
@@ -52,6 +55,7 @@ if(isset($_POST['nomeCliente']) && isset($_POST['endereco']) && isset($_POST['te
     </header>
     <!-- Fim do Menu -->
 
+<<<<<<< HEAD
     <hr>
  
 
@@ -108,6 +112,51 @@ if(isset($_POST['nomeCliente']) && isset($_POST['endereco']) && isset($_POST['te
         </div>
 
  
+=======
+    <h2>Contato</h2>
+    <hr>
+    <center>
+
+        <h1>Solicitação de Envio de Pedidos</h1>
+
+        <form div class="formedition" action="" method="POST" onsubmit="analisePedido()">
+           
+
+            <b><label for="nomeCliente">Cliente:</label></b>
+            <input style="color:white; background-color: red; width: 400px;" type="text" id="nomeCliente" name="nomeCliente">
+            <br>
+            <b><label for="endereco">Endereço Completo:</label></b>
+            <input style="color:white; background-color: red; width: 400px;" type="text" id="endereco" name="endereco">
+            <br>
+            <b><label for="telefone">Telefone:</label></b>
+            <input style="color:white; background-color: red; width: 400px;" type="text" id="telefone" name="telefone">
+            <br>
+            <p id=contact-msg>Produtos:</p>
+
+            <input type="radio" id="geladeira" name="produto" value="geladeira">
+            <label for="geladeira">Geladeira</label>
+            <br>
+            <input type="radio" id="microndas" name="produto" value="microondas">
+            <label for="microondas">Microondas</label>
+            <br>
+            <input type="radio" id="fogao" name="produto" value="fogao" checked>
+            <label for="fogao">Fogão</label>
+            <br><br>
+
+            <b><label for="quantidade">Quantidade:</label></b>
+            <input style="color:white; background-color: red; width: 400px;" type="text" id="quantidade" name="quantidade">
+            <br>
+  
+            <input type="submit">
+
+            </div>
+            <br><br><br>
+
+
+        </form>
+
+    </center>
+>>>>>>> a087fac5da9e52091bd925924a1db9373a84df9f
     <hr>
 
     <?php 
@@ -130,16 +179,23 @@ if(isset($_POST['nomeCliente']) && isset($_POST['endereco']) && isset($_POST['te
 
 ?>
 
+<<<<<<< HEAD
     <hr>
+=======
+<hr>
+>>>>>>> a087fac5da9e52091bd925924a1db9373a84df9f
 
     <footer>
         <p id="copy">&copy; Recode Pro</p>
     </footer>
 
+<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+=======
+>>>>>>> a087fac5da9e52091bd925924a1db9373a84df9f
 </body>
 </head>
 

@@ -28,7 +28,10 @@ if(!$conn){
     <meta charset="UTF-8">
     <title>Produtos - Full Stack eletro</title>
     <link rel="stylesheet" href="css/estilo.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+=======
+>>>>>>> a087fac5da9e52091bd925924a1db9373a84df9f
     <script src="js/funcoes.js"></script>
     
 </head>
@@ -41,6 +44,7 @@ if(!$conn){
         ?>
     </header>
     <!-- Fim do Menu -->
+<<<<<<< HEAD
 
    
     <h2>Produtos </h2>
@@ -61,6 +65,26 @@ if(!$conn){
 </div>
 <br>
 
+=======
+    
+    <h2>Produtos </h2>
+    <h4>compra protegida<br><img width="10%" src="./imagens/site-blindado-logo.png" alt="site blindado"></h4>
+    <button style="margin-left: 90%;" type="button" onclick='cumpomdedesconto()'>#cupom<br>desconto</button>
+    <hr>
+
+    <div id="principal">
+        <nav id="menu-lateral">
+            <h3 style="color: white;">Categoria</h3>
+            <ul>
+                <li onclick="exibir_todos()">Todos (12)</li>
+                <li onclick="exibir_categoria('geladeira')">Geladeiras (3)</li>
+                <li onclick="exibir_categoria('fogao')">Fogões (2)</li>
+                <li onclick="exibir_categoria('microondas')">Microondas (3)</li>
+                <li onclick="exibir_categoria('lavaroupas')">Lava Roupas (2)</li>
+                <li onclick="exibir_categoria('lavaloucas')">Lava Louças (2)</li>
+            </ul>
+        </nav>
+>>>>>>> a087fac5da9e52091bd925924a1db9373a84df9f
         <section id="Produtos">
 
     <?php 
@@ -78,7 +102,11 @@ if(!$conn){
                 <hr>
                 <p class="valorProduto">R$ <?php echo $rows["preco"];?></p>
                 <p class="promocao">R$ <?php echo $rows["precoVenda"];?></p>
+<<<<<<< HEAD
                 <button class="btn btn-danger">Comprar</button>
+=======
+                <button title="clique aqui para comprar">Comprar</button>
+>>>>>>> a087fac5da9e52091bd925924a1db9373a84df9f
 
             </div>
 
@@ -96,6 +124,7 @@ if(!$conn){
     </main>
     <br>
     <br>
+<<<<<<< HEAD
     <hr>
     <br>
    
@@ -103,6 +132,12 @@ if(!$conn){
         <img src="./imagens/forma de pagamento daten - logos-cartoes_.jpg" alt="Formas de Pagamento">
         <br><br>
         <h6 style ="font-size: 12px">compra protegida<br><img width="10%" src="./imagens/site-blindado-logo.png" alt="site blindado"></h6>
+=======
+    <br>
+ 
+    <center>
+        <img src="./imagens/forma de pagamento daten - logos-cartoes_.jpg" alt="Formas de Pagamento">
+>>>>>>> a087fac5da9e52091bd925924a1db9373a84df9f
     </center>
     <hr>
 
@@ -110,10 +145,13 @@ if(!$conn){
         <p id="copy">&copy; Recode Pro</p>
     </footer>
 
+<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+=======
+>>>>>>> a087fac5da9e52091bd925924a1db9373a84df9f
 </body>
 
 </html>

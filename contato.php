@@ -37,7 +37,6 @@ if(isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['motivo']) &&
     <meta charset="UTF-8">
     <title>Contato - Full Stack Eletro</title>
     <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -49,72 +48,63 @@ if(isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['motivo']) &&
     </header>
     <!-- Fim do Menu -->
 
+    <h2>Contato</h2>
     <hr>
- 
+    <center>
+        <table border=0 width"100%" cellpadding="20">
+            <tr>
+                <td width "50%" align="center">
+                    <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511962441455" target="_blank">
+                        <img src="./imagens/whatsapp-icone-1.png" alt="contato" width="80px"
+                            title="Whatsapp - Fale Conosco">
+                        <div class="contatos">via Whats App</div>
+                </td>
+                <td width "50%" align="center">
+                    <img src="./imagens/mail 12.png" alt="contato" width="80px">
+                    <div class="contatos">contato@fullstackeletro.com.br</div>
+                </td>
+        </table>
+        <br>
 
-<!-- Formulário da aba de Contatos (Utilização de Bootstrap - Classes em Tabelas e Formulários ) -->
+        <h1>Fale Conosco</h1>
 
-<div class="container">
-        <div class="row">
-            <div class="col-sm"> </div>
-            <div class="col-sm">
 
-                <form action="" method="POST">
 
-                    <div class="form-group, col-sm-20 my-1">
-                        <h1>Fale Conosco</h1>
-
-                        <label for="nome">Nome</label>
-                        <input type="text" class="form-control" id="nome" name="nome">
-                    </div>
-
-                    <div class="form-group, col-sm-20 my-1">
-                        <label for="email">Endereço de email</label>
-                        <input type="text" class="form-control" id="email" name="email" placeholder="nome@exemplo.com">
-                    </div>
-
-                    <div class="form-group, col-sm-20 my-1">
-                        <label for="mensagem">Digite aqui sua mensagem</label>
-                        <textarea class="form-control" id="mensagem" name="mensagem" rows="3"></textarea>
-                    </div>
-
-                    <div class="form-group, col-sm-20 my-1">
-                        <label for="motivo">Selecione o motivo do seu contato: </label>
-                        <select multiple class="form-control" name="motivo" id="motivo">
-                            <option>Dúvidas</option>
-                            <option>Reclamação</option>
-                            <option>Elogios</option>
-                            <option>Problemas com Entrega</option>
-                            <option>Problemas Técnicos (site)</option>
-                            <option>Outros</option>
-                        </select>
-                    </div>
-
-                    <button type="submit" class="btn btn-danger">Enviar</button>
-
-                </form>
-            </div>
-            <div class="col-sm">
-
-                <table>
-                    <tr>
-                        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511962441455" target="_blank">
-                            <img src="./imagens/whatsapp-icone-1.png" alt="contato" width="50px"
-                                title="Whatsapp - Fale Conosco"></a>
-                        </td>
-                        <div class="contatos">
-                            <a href="mailto:contato@fullstackeletro.com.br">
-                                <img src="./imagens/mail 12.png" alt="contato" width="50px">
-                                <i class="far fa-envelope fa-2x"></i></a>
-                        </div>
-                        </td>
-                </table>
+        <form div class="formedition" action="" method="POST">
+            <div class="quadroexterno"><img style="width: 100%;" src="imagens/Logo Maior.png">
 
             </div>
-        </div>
+            </div>
 
-        <!-- FIM do Formulário da aba de Contatos -->
+            <b><label for="nome">Nome:</label></b>
+            <input style="color:white; background-color: red; width: 400px;" type="text" id="nome" name="nome">
+            <br>
+            <b><label for="email">E-mail:</label></b>
+            <input style="color:white; background-color: red; width: 400px;" type="text" id="nome" name="email">
+            <br>
+            <p id=contact-msg>Mensagem:</p>
 
+            <input type="radio" id="duvidas" name="motivo" value="duvidas">
+            <label for="masculino">Dúvidas</label>
+            <br>
+            <input type="radio" id="reclamação" name="motivo" value="reclamação">
+            <label for="feminino">Reclamação</label>
+            <br>
+            <input type="radio" id="outros" name="motivo" value="outros" checked>
+            <label for="feminino">Outros</label>
+
+            <br><br>
+            <textarea style="width: 400px; color:white; background-color:red" name="mensagem"></textarea>
+            <br>
+            <input type="submit">
+            <br><br><br>
+
+
+        </form>
+
+        
+
+    </center>
     <hr>
 
     <?php 
@@ -139,10 +129,6 @@ if(isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['motivo']) &&
     <footer>
         <p id="copy">&copy; Recode Pro</p>
     </footer>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 </head>
