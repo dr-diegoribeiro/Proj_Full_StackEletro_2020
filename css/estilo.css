@@ -55,22 +55,11 @@ header {
     color: slategray;
 }
 
-#formadepagamento {
-    color: white;
-    font-size: 20px;
-    background: red;
-    text-align: center;
-}
 
 #copy {
     text-align: center;
 }
 
-h4 {
-    position: fixed;
-    margin: 0%;
-    font-size: 15px;
-}
 
 .contatos {
     font-family: Arial;
@@ -139,6 +128,14 @@ textarea {
     text-justify: auto;
 }
 
+.produto img {
+    width: 120px;
+}
+
+.produto img:hover {
+    width: 140px;
+}
+
 .produto {
     width: 200px;
     border: 1px solid red;
@@ -147,13 +144,6 @@ textarea {
     border-radius: 35px;
 }
 
-.produto img {
-    width: 120px;
-}
-
-.produto img:hover {
-    width: 140px;
-}
 
 .produto .valorProduto {
     text-decoration: line-through;
