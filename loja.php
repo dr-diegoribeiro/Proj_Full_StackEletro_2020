@@ -19,48 +19,87 @@
     </header>
     <!-- Fim do Menu -->
 
-    <center>
+   <!--Jumbotron - caixa cinza -->
+   <div class="container">
+    <div class="row">
 
-        <img style="margin-left: 0%;" ; width="40%" src="imagens/mapa.OK.png">
-
-
-        <div class="container">
-            <h2>Nossas Lojas</h2>
-            <p>Horário de funcionamento: de segunda a sexta-feira, das 10h às 17h e aos sábados, das 10h às 15h. </p>
-            <div class="d-flex p-6 bg-dark text-white">
-            <div class="d-flex p-4 bg-danger text-white">  
-                <div class="p-3 bg-dark">Av. Pereira Barth, 115 <br>  Centro - SP <br> Tell: (11) 3333-3333</div>
-                <div class="p-3 bg-secondary">Rua Cubas, 50 <br>  Centro - RJ<br> Tell: (21) 3333-3333</div>
-                <div class="p-3 bg-dark">Av. Keneddy, 50 <br>  Centro BH<br> Tell: (71) 3333-3333</div>
-                <div class="p-3 bg-secondary">Rua Benedito Ó, 13 <br>  São Luís - MA<br> Tell: (71) 3333-333</div>
-                <div class="p-3 bg-dark">Av.  Barreto, 115 <br>  Centro - SP <br> Tell: (11) 3333-3333</div>
-                <div class="p-3 bg-secondary">Av. Pereira, 115 <br>  Centro - SP <br> Tell: (11) 3333-3333</div>
-                </div>
-            </div>
+      <div class="col 6">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Nossas Lojas</h1>
+            <p class="lead">Em decorrência da COVID-19 o horário de atendimento nas lojas físicas está diferenciado:
+            <br>de segunda a sexta-feiras, das 10h às 17h e aos sábados, das 10 às 14h.</p>
+            <p>Por questões de segurança será permitido o acesso as lojas físicas apenas clientes com o uso da máscara!</p>
+          </div>
         </div>
-
-        
-    </center>
-
-    <hr>
-   
-    <br>
-    <center>
-        <img src="./imagens/forma de pagamento daten - logos-cartoes_.jpg" alt="Formas de Pagamento">
-    </center>
+      </div>
+    </div>
+  </div>
+  <!--Jumbotron - fim da caixa cinza -->
 
 
-    <hr><br><hr>
+  <div class="container">
+    <div class="row">
 
-    <footer>
-        <p id="copy">&copy; Recode Pro</p>
-    </footer>
+        <div class="col 6">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="./imagens/loja 1.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">São Paulo</h5>
+                    <p class="card-text">Av. Penha, 15 - São Paulo <br>Tel: (11) 3333-3333</p>
+                    <a href="#" class="btn btn-dark">como chegar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col order-12">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="./imagens/loja 2.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Rio de Janeiro</h5>
+                    <p class="card-text">R. Cubas, 50 - Centro - RJ<br>Tel: (21) 3333-3333
+                      </p>
+                    <a href="#" class="btn btn-dark">como chegar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="./imagens/loja 3.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Maranhão</h5>
+                    <p class="card-text">R. Dors, 13 - São Luís - MA <br>Tel: (71) 3333-333
+                    </p>
+                    <a href="#" class="btn btn-dark">como chegar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+    </div>
+</div>
 
 
+<br>
+<center>
+    <img src="./imagens/forma de pagamento daten - logos-cartoes_.jpg" alt="Formas de Pagamento">
+
+    <br><br><br>
+  <hr><br><br>
+  
+<footer>
+    <p id="copy">&copy; Recode Pro</p>
+</footer>
+
+</center>
 </body>
+
+</html>
 
 </html>

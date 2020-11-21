@@ -26,55 +26,60 @@
         onclick='cumpomdedesconto()'>#desconto</button>
     <hr>
 
-    <div class="container mt-3">
-        <p>Filtro por categorias:</p>
-        <div class="d-flex p-3 bg-dark text-white">
-            <div class="p-1 bg-danger; col-2" onclick="exibir_todos()">Todos___(12)</div>
-            <div class="p-1 bg-danger; col-2" onclick="exibir_categoria('geladeira')">Geladeiras</div>
-            <div class=" p-1 bg-danger; col-2" onclick="exibir_categoria('fogao')">Fogões</div>
-            <div class="p-1 bg-danger; col-2" onclick="exibir_categoria('microondas')">Microondas</div>
-            <div class="p-1 bg-danger; col-2" onclick="exibir_categoria('lavaroupas')">Lava Roupas</div>
-            <div class="p-1 bg-danger; col-2" onclick="exibir_categoria('lavaloucas')">Lava Louças</div>
-        </div>
+
+
+<!--Filtro de Produtos-->
+    <div class="row">
+  <div class="col-2">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active list-group-item-dark" id="list-home-list" data-toggle="list" onclick="exibir_todos()">Todos</a>
+      <a class="list-group-item list-group-item-action list-group-item-dark" list-group-item-dark id="list-profile-list" data-toggle="list" onclick="exibir_categoria('geladeira')">Geladeiras</a>
+      <a class="list-group-item list-group-item-action list-group-item-dark" id="list-messages-list" data-toggle="list" onclick="exibir_categoria('fogao')">Fogões</a>
+      <a class="list-group-item list-group-item-action list-group-item-dark" id="list-settings-list" data-toggle="list" onclick="exibir_categoria('microondas')">Microondas</a>
+      <a class="list-group-item list-group-item-action list-group-item-dark" id="list-settings-list" data-toggle="list" onclick="exibir_categoria('lavaroupas')">Lava Roupas</a>
+      <a class="list-group-item list-group-item-action list-group-item-dark" id="list-settings-list" data-toggle="list" onclick="exibir_categoria('lavaloucas')">Lava Louças</a>
     </div>
-    <br>
+  </div>
+  <!--Filtro de Produtos-->
 
-    <section id="Produtos">
+  <div class="col-8">
+   
+  <br>
 
-        <?php
+<section id="Produtos">
+
+    <?php
 $dados_json = file_get_contents("http://localhost/Proj_Full_SackEletro_2020/getContent.php?table=produtos");
 
 $dados = json_decode($dados_json, true);
 // print_r( $dados ); foi apenas para testar
 
 foreach ($dados as $key => $rows){
-    //print_r($rows);
+//print_r($rows);
 
 
 ?>
 
-        <div class="produto" style="display:block" id="box_<?php echo $rows["categoria"];?>">
-            <img src="<?php echo $rows["imagem"];?>" alt="Geladeira">
-            <p><?php echo $rows["descricao"];?></p>
-            <hr>
-            <p class="valorProduto">R$ <?php echo $rows["preco"];?></p>
-            <p class="promocao">R$ <?php echo $rows["precoVenda"];?></p>
-            <button class="btn btn-danger">Comprar</button>
+    <div class="produto" style="display:block" id="box_<?php echo $rows["categoria"];?>">
+        <img src="<?php echo $rows["imagem"];?>" alt="Geladeira">
+        <p><?php echo $rows["descricao"];?></p>
+        <hr>
+        <p class="valorProduto">R$ <?php echo $rows["preco"];?></p>
+        <p class="promocao">R$ <?php echo $rows["precoVenda"];?></p>
+        <button class="btn btn-danger">Comprar</button>
 
-        </div>
+    </div>
 
-        <?php
+    <?php
 }
 ?>
 
+</section>
+</div>
+</main>
+</div>
+</div>
 
-    </section>
-    </div>
-    </main>
-    <br>
-    <br>
-    <hr>
-    <br>
 
     <center>
         <img src="./imagens/forma de pagamento daten - logos-cartoes_.jpg" alt="Formas de Pagamento">
